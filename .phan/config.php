@@ -303,20 +303,20 @@ return [
 
     // A list of files to include in analysis
     'file_list' => [
-        'phan',
-        'phan_client',
-        'plugins/codeclimate/engine',
-        'tool/make_stubs',
-        'internal/dump_fallback_ast.php',
-        'internal/internalsignatures.php',
-        'internal/package.php',
-        'internal/reflection_completeness_check.php',
-        'internal/sanitycheck.php',
-        'internal/update_wiki_config_types.php',
-        'internal/update_wiki_issue_types.php',
-        'vendor/phpdocumentor/type-resolver/src/Types/ContextFactory.php',
-        'vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
-        'vendor/phpdocumentor/reflection-docblock/src/DocBlock.php',
+//        'phan',
+//        'phan_client',
+//        'plugins/codeclimate/engine',
+//        'tool/make_stubs',
+//        'internal/dump_fallback_ast.php',
+//        'internal/internalsignatures.php',
+//        'internal/package.php',
+//        'internal/reflection_completeness_check.php',
+//        'internal/sanitycheck.php',
+//        'internal/update_wiki_config_types.php',
+//        'internal/update_wiki_issue_types.php',
+//        'vendor/phpdocumentor/type-resolver/src/Types/ContextFactory.php',
+//        'vendor/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
+//        'vendor/phpdocumentor/reflection-docblock/src/DocBlock.php',
         // 'vendor/phpunit/phpunit/src/Framework/TestCase.php',
     ],
 
@@ -365,20 +365,20 @@ return [
     // Thus, both first-party and third-party code being used by
     // your application should be included in this list.
     'directory_list' => [
-        'internal/lib',
-        'src',
-        'tests/Phan',
-        'vendor/composer/semver/src',
-        'vendor/composer/xdebug-handler/src',
-        'vendor/felixfbecker/advanced-json-rpc/lib',
-        'vendor/microsoft/tolerant-php-parser/src',
-        'vendor/netresearch/jsonmapper/src',
-        'vendor/phpunit/phpunit/src',
-        'vendor/psr/log/Psr',
-        'vendor/sabre/event/lib',
-        'vendor/symfony/console',
-        '.phan/plugins',
-        '.phan/stubs',
+//        'internal/lib',
+//        'src',
+//        'tests/Phan',
+//        'vendor/composer/semver/src',
+//        'vendor/composer/xdebug-handler/src',
+//        'vendor/felixfbecker/advanced-json-rpc/lib',
+//        'vendor/microsoft/tolerant-php-parser/src',
+//        'vendor/netresearch/jsonmapper/src',
+//        'vendor/phpunit/phpunit/src',
+//        'vendor/psr/log/Psr',
+//        'vendor/sabre/event/lib',
+//        'vendor/symfony/console',
+//        '.phan/plugins',
+//        '.phan/stubs',
     ],
 
     // List of case-insensitive file extensions supported by Phan.
@@ -448,6 +448,7 @@ return [
     // NOTE: values can be the base name without the extension for plugins bundled with Phan (E.g. 'AlwaysReturnPlugin')
     // or relative/absolute paths to the plugin (Relative to the project root).
     'plugins' => [
+        AutoloadPlugin::class,
         'AlwaysReturnPlugin',
         'DollarDollarPlugin',
         'UnreachableCodePlugin',
